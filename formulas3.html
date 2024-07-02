@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3er Parcial</title>
+    <link rel="stylesheet" href="styles/styles3.css">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <!-- Agrega hipervínculos internos aquí -->
+            <li><a href="#interes-simple">Interés Simple</a></li>
+            <li><a href="#monto-final">Monto Final</a></li>
+            <li><a href="#interes-ganado">Interés</a></li>
+            <li><a href="#monto-interes">Monto con interes</a></li>
+            <li><a href="#ventas-plazos">Ventas a plazos</a></li>
+            <li><a href="#ventas-plazos-intereses">Ventas a plazos con intereses</a></li>
+            <li><a href="#ventas-plazos-insoluto">Ventas a plazos con Saldo Insoluto</a></li>
+            <li><a href="#valor-futuro">Valor futuro</a></li>
+            <li><b><a href="index.html">Menu Principal</a></b></li>
+            <!-- Añade más enlaces según sea necesario -->
+        </ul>
+    </nav>
+
+    <!-- ------------------ Interes simple ------------------------- -->
+
+    <section id="interes-simple">
+        <h2>Interés Simple</h2>
+
+        <div class="formula-container">
+            <div class="descripcion">
+                <!-- Descripciones y cajas de texto -->
+                <label for="tasa-interes">tasa de interés</label>
+                <div>
+                    <label for="i">i =</label>
+                    <input type="text" id="tasa-interes" placeholder="tasa de interés">
+                </div>
+                <div>
+                    <label for="interes">I =</label>
+                    <input type="text" id="interes" placeholder="interés">
+                </div>
+                <div>
+                    <label for="capital">C =</label>
+                    <input type="text" id="capital" placeholder="Capital o valor presente">
+                </div>
+            </div>
+
+            <div class="imagen">
+                <img src="imagenes/tasa_interes.png" alt="Interes Simple">
+            </div>
+        </div>
+
+        <!-- Botones de acción -->
+        <div class="acciones">
+            <button id="limpiar">Limpiar</button>
+            <button id="calcular">Calcular</button>
+        </div>
+    </section>
+
+    <!-- ------------------ Monto final ------------------------- -->
+
+    <section id="monto-final">
+        <h2>Monto Final</h2>
+    
+        <div class="formula-container">
+            <div class="descripcion">
+                <!-- Descripciones y cajas de texto -->
+                <label for="monto-final-futuro">Formula</label>
+                <div>
+                    <label for="monto-valor-f">M =</label>
+                    <input type="text" id="monto-valor-f" placeholder="Monto">
+                </div>
+                <div>
+                    <label for="capital-monto-final">C =</label>
+                    <input type="text" id="capital-monto-final" placeholder="capital">
+                </div>
+                <div>
+                    <label for="interes-monto-final">I =</label>
+                    <input type="text" id="interes-monto-final" placeholder="Interes">
+                </div>
+            </div>
+    
+            <div class="imagen">
+                <img src="imagenes/monto_final.png" alt="Monto final">
+            </div>
+        </div>
+    
+        <!-- Botones de acción -->
+        <div class="acciones">
+            <button id="limpiar-monto-final">Limpiar</button>
+            <button id="calcular-monto-final">Calcular</button>
+        </div>
+    </section>
+
+    <!-- ------------------ Interes ------------------------- -->
+
+    <section id="interes-ganado">
+        <h2>Interés Ganado</h2>
+    
+        <div class="formula-container">
+            <div class="descripcion">
+                <!-- Descripciones y cajas de texto -->
+                <label for="intereses-ganados">Fórmula</label>
+                <div>
+                    <label for="intereses-ganados">I =</label>
+                    <input type="text" id="intereses-ganados" placeholder="Interés ganado">
+                </div>
+                <div>
+                    <label for="tasa-interes-ganado">i =</label>
+                    <input type="text" id="tasa-interes-ganado" placeholder="Tasa de interés">
+                </div>
+                <div>
+                    <label for="capital-interes-ganado">C =</label>
+                    <input type="text" id="capital-interes-ganado" placeholder="Capital o Valor presente">
+                </div>
+                <div>
+                    <label for="tiempo-interes-ganado">t =</label>
+                    <input type="text" id="tiempo-interes-ganado" placeholder="Tiempo o No. de periodos">
+                </div>
+            </div>
+    
+            <div class="imagen">
+                <img src="imagenes/interes-ganado.png" alt="Interes ganado">
+            </div>
+        </div>
+    
+        <!-- Botones de acción -->
+        <div class="acciones">
+            <button id="limpiar-interes-ganado">Limpiar</button>
+            <button id="calcular-interes-ganado">Calcular</button>
+        </div>
+    </section>
+
+    <!-- ------------------ Monto final - Interes simple ------------------------- -->
+
+    <section id="monto-interes">
+        <h2>Monto con Interés Simple</h2>
+    
+        <div class="formula-container">
+            <div class="descripcion">
+                <!-- Descripciones y cajas de texto -->
+    
+                <label for="monto-final-intereses">Fórmula</label>
+                <div>
+                    <label for="valor-futuro">M =</label>
+                    <input type="text" id="valor-futuro" placeholder="Monto o Valor futuro">
+                </div>
+                <div>
+                    <label for="capital-monto">C =</label>
+                    <input type="text" id="capital-monto" placeholder="Capital o Valor presente">
+                </div>
+                <div>
+                    <label for="tasa-interes-monto">i =</label>
+                    <input type="text" id="tasa-interes-monto" placeholder="Tasa de interés">
+                </div>
+                <div>
+                    <label for="tiempo-monto">t =</label>
+                    <input type="text" id="tiempo-monto" placeholder="Tiempo o No. de periodos">
+                </div>
+            </div>
+    
+            <div class="imagen">
+                <img src="imagenes/monto-intereses.png" alt="Monto con Interés Simple">
+            </div>
+        </div>
+    
+        <!-- Botones de acción -->
+        <div class="acciones">
+            <button id="limpiar-monto-interes">Limpiar</button>
+            <button id="calcular-monto-interes">Calcular</button>
+        </div>
+    </section>
+
+
+    <!-- ------------------ Ventas a plazos ------------------------- -->
+
+    <section id="ventas-plazos">
+        <h2>Ventas a Plazos</h2>
+    
+        <div class="formula-container">
+            <div class="descripcion">
+                <!-- Descripciones y cajas de texto -->
+    
+                <label for="ventas-plazos">Fórmula</label>
+                <div>
+                    <label for="tasa-interes">i =</label>
+                    <input type="text" id="tasa-interes" placeholder="Tasa de interés">
+                </div>
+                <div>
+                    <label for="periodos">m =</label>
+                    <input type="text" id="periodos" placeholder="Periodos en un año">
+                </div>
+                <div>
+                    <label for="intereses">I =</label>
+                    <input type="text" id="intereses" placeholder="Interés">
+                </div>
+                <div>
+                    <label for="saldo-insoluto">B =</label>
+                    <input type="text" id="saldo-insoluto" placeholder="Saldo Insoluto">
+                </div>
+                <div>
+                    <label for="tiempo">t =</label>
+                    <input type="text" id="tiempo" placeholder="Tiempo o No. de periodos">
+                </div>
+    
+                <p>Nota: para calcular la venta a plazos necesitamos saber el valor de B e I, las fórmulas se encuentran en la parte inferior.</p>
+    
+            </div>
+    
+            <div class="imagen">
+                <img src="imagenes/ventas-plazos.png" alt="Ventas a Plazos">
+            </div>
+        </div>
+    
+        <!-- Botones de acción -->
+        <div class="acciones">
+            <button id="limpiar-ventas-plazos">Limpiar</button>
+            <button id="calcular-ventas-plazos">Calcular</button>
+        </div>
+    </section>
+
+    <!-- ------------------ Ventas a plazos (intereses) ------------------------- -->
+
+    <section id="ventas-plazos-intereses">
+        <h2>Ventas a Plazos (Interés)</h2>
+    
+        <div class="formula-container">
+            <div class="descripcion">
+                <!-- Descripciones y cajas de texto -->
+    
+                <label for="ventas-plazos-intereses">Fórmula</label>
+                <div>
+                    <label for="intereses">l =</label>
+                    <input type="text" id="plazos-intereses" placeholder="Interés">
+                </div>
+                <div>
+                    <label for="valor-pago">R =</label>
+                    <input type="text" id="valor-pago" placeholder="Valor de pago o cuota">
+                </div>
+                <div>
+                    <label for="tiempo">t =</label>
+                    <input type="text" id="plazos-tiempo" placeholder="Tiempo o No. de periodos">
+                </div>
+                <div>
+                    <label for="saldo-insoluto">B =</label>
+                    <input type="text" id="plazos-saldo-insoluto" placeholder="Saldo Insoluto">
+                </div>
+    
+            </div>
+    
+            <div class="imagen">
+                <img src="imagenes/ventas-plazosInt.png" alt="Ventas a Plazos (Interés)">
+            </div>
+        </div>
+    
+        <!-- Botones de acción -->
+        <div class="acciones">
+            <button id="limpiar-plazos-intereses">Limpiar</button>
+            <button id="calcular-plazos-intereses">Calcular</button>
+        </div>
+    </section>
+    
+
+    <!-- ------------------ Ventas a plazos (Saldo Insoluto) ------------------------- -->
+
+    <section id="ventas-plazos-insoluto">
+        <h2>Ventas a Plazos (Saldo Insoluto)</h2>
+    
+        <div class="formula-container">
+            <div class="descripcion">
+                <!-- Descripciones y cajas de texto -->
+    
+                <label for="ventas-plazos-insoluto">Fórmula</label>
+                <div>
+                    <label for="saldo-insoluto">B =</label>
+                    <input type="text" id="saldo-insoluto" placeholder="Saldo Insoluto">
+                </div>
+                <div>
+                    <label for="precio-contado">Pc =</label>
+                    <input type="text" id="precio-contado" placeholder="Precio de contado">
+                </div>
+                <div>
+                    <label for="cuota-inicial">Ci =</label>
+                    <input type="text" id="cuota-inicial" placeholder="Cuota inicial">
+                </div>
+            </div>
+    
+            <div class="imagen">
+                <img src="imagenes/ventas-plazosInso.png" alt="Ventas a Plazos (Saldo Insoluto)">
+            </div>
+        </div>
+    
+        <!-- Botones de acción -->
+        <div class="acciones">
+            <button id="limpiar-plazos-insoluto">Limpiar</button>
+            <button id="calcular-plazos-insoluto">Calcular</button>
+        </div>
+    </section>
+    
+
+    <!-- ------------------ Valor futuro ------------------------- -->
+
+    <section id="valor-futuro">
+        <h2>Valor Futuro</h2>
+    
+        <div class="formula-container">
+            <div class="descripcion">
+                <!-- Descripciones y cajas de texto -->
+    
+                <label for="valor-futuro">Fórmula</label>
+                <div>
+                    <label for="valor-final">F =</label>
+                    <input type="text" id="valor-final" placeholder="Valor futuro o final">
+                </div>
+                <div>
+                    <label for="valor-presente">P =</label>
+                    <input type="text" id="valor-presente" placeholder="Valor presente">
+                </div>
+                <div>
+                    <label for="tasa-interes">i =</label>
+                    <input type="text" id="tasa-interes-futuro" placeholder="Tasa de interés">
+                </div>
+                <div>
+                    <label for="no-periodos">n =</label>
+                    <input type="text" id="no-periodos" placeholder="Número de periodos">
+                </div>
+            </div>
+    
+            <div class="imagen">
+                <img src="imagenes/valor-futuro.png" alt="Valor Futuro">
+            </div>
+        </div>
+    
+        <!-- Botones de acción -->
+        <div class="acciones">
+            <button id="limpiar-futuro">Limpiar</button>
+            <button id="calcular-futuro">Calcular</button>
+        </div>
+    </section>
+    
+            
+    
+
+    <!-- FOOTER -->
+
+    <script src="scripts/scripts3.js"></script>
+</body>
+</html>

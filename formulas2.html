@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2do parcial</title>
+    <link rel="stylesheet" href="styles/styles2.css">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <!-- Agrega hipervínculos internos aquí -->
+            <li><a href="#capitalizacion-continua">Capitalizacion Continua</a></li>
+            <li><a href="#cap-discreta">Capitalizacion discreta</a></li>
+            <li><a href="#VPN">Valor Presente Neto</a></li>
+            <li><a href="#TIR">Tasa Interna de Rendimiento</a></li>
+            <li><a href="#ventas-plazos">Analisis Incremental</a></li>
+            <li><b><a href="index.html">Menu Principal</a></b></li>
+            <!-- Añade más enlaces según sea necesario -->
+        </ul>
+    </nav>
+
+    <!-- ------------------ Capitalizacion Continua  ------------------------- -->
+
+    <section id="capitalizacion-continua">
+        <h2>Capitalización Continua</h2>
+    
+        <div class="formula-container">
+            <div class="descripcion">
+                <!-- Descripciones y cajas de texto -->
+                <label for="capitalizacion-continua">Fórmula</label>
+                <div>
+                    <label for="vf">VF =</label>
+                    <input type="text" id="monto-futuro" placeholder="Valor Futuro" disabled>
+                </div>
+                <div>
+                    <label for="vp">VP =</label>
+                    <input type="text" id="monto-inicial" placeholder="Valor Presente">
+                </div>
+                <div>
+                    <label for="e">e =</label>
+                    <input type="text" id="logaritmo-natural" placeholder="2.71828" value="2.71828" disabled>
+                </div>
+                <div>
+                    <label for="ic">ic =</label>
+                    <input type="text" id="tasa-interes-continua" placeholder="Tasa de Interés Continua">
+                </div>
+                <div>
+                    <label for="T">T =</label>
+                    <input type="text" id="tiempo" placeholder="Tiempo">
+                </div>
+            </div>
+    
+            <div class="imagen">
+                <img src="imagenes/capitalizacion-continua.png" alt="capitalizacion-continua">
+            </div>
+        </div>
+    
+        <!-- Botones de acción -->
+        <div class="acciones">
+            <button id="limpiar-continua">Limpiar</button>
+            <button id="calcular-continua">Calcular</button>
+        </div>
+    </section>
+    
+
+    <!-- ------------------  Capitalizacion discreta ------------------------- -->
+
+    <section id="cap-discreta">
+        <h2>Capitalización Discreta</h2>
+    
+        <div class="formula-container">
+            <div class="descripcion">
+                <!-- Descripciones y cajas de texto -->
+                <label for="cap-discreta">Fórmula</label>
+                <div>
+                    <label for="vf">VF =</label>
+                    <input type="text" id="monto-futuro-discreta" placeholder="Valor Futuro" disabled>
+                </div>
+                <div>
+                    <label for="P">P =</label>
+                    <input type="text" id="capital-discreta" placeholder="Capital Principal">
+                </div>
+                <div>
+                    <label for="r/m">r/m =</label>
+                    <input type="text" id="tasa-interes-discreta" placeholder="Tasa de Interés">
+                </div>
+                <div>
+                    <label for="mt">mt =</label>
+                    <input type="text" id="periodo-tiempo-discreta" placeholder="Periodo de Tiempo">
+                </div>
+            </div>
+    
+            <div class="imagen">
+                <img src="imagenes/cap-discreta.png" alt="Capitalización Discreta">
+            </div>
+        </div>
+    
+        <!-- Botones de acción -->
+        <div class="acciones">
+            <button id="limpiar-discreta">Limpiar</button>
+            <button id="calcular-discreta">Calcular</button>
+        </div>
+    </section>
+    
+
+    <!-- ------------------ Valor Presente Neto (VPN) ------------------------- -->
+
+    <section id="VPN">
+        <h2>Valor Presente Neto (VPN)</h2>
+    
+        <div class="formula-container">
+            <div class="descripcion">
+                <!-- Descripciones y cajas de texto -->
+                <label for="VPN">Fórmula</label>
+                <div>
+                    <label for="VpN">VPN =</label>
+                    <input type="text" id="valor-presente-neto" placeholder="Valor Presente Neto" disabled>
+                </div>
+                <div>
+                    <label for="FJ">Flujo de Efectivo =</label>
+                    <input type="text" id="flujo-efectivo-vpn" placeholder="Flujo de Efectivo">
+                </div>
+                <div>
+                    <label for="r/m">r/m =</label>
+                    <input type="text" id="tasa-interes-vpn" placeholder="Tasa de Interés">
+                </div>
+                <div>
+                    <label for="n">n=</label>
+                    <input type="text" id="periodos-vpn" placeholder="Períodos">
+                </div>
+                <div>
+                    <label for="Inv-ini">Inversión In. =</label>
+                    <input type="text" id="inversion-inicial-vpn" placeholder="Inversión Inicial">
+                </div>
+            </div>
+    
+            <div class="imagen">
+                <img src="imagenes/VPN.png" alt="VPN">
+            </div>
+        </div>
+    
+        <!-- Botones de acción -->
+        <div class="acciones">
+            <button id="limpiar-vpn">Limpiar</button>
+            <button id="calcular-vpn">Calcular</button>
+        </div>
+    </section>
+    
+
+    <!-- ------------------ Analisis Incremental ------------------------- -->
+
+    <section id="incremental">
+        <h2>Análisis Incremental</h2>
+    
+        <div class="formula-container">
+            <div class="descripcion">
+                <!-- Descripciones y cajas de texto -->
+    
+                <label for="incremental">Fórmula</label>
+                <div>
+                    <label for="incremental">Incremental =</label>
+                    <input type="text" id="incremental-valor" placeholder="Incremental" disabled>
+                </div>
+                <div>
+                    <label for="proyeB">Proyecto B =</label>
+                    <input type="text" id="flujos-proyecto-b" placeholder="Flujos de proyecto B">
+                </div>
+                <div>
+                    <label for="proyeA">Proyecto A =</label>
+                    <input type="text" id="flujos-proyecto-a" placeholder="Flujos de proyecto A">
+                </div>
+            </div>
+    
+            <div class="imagen">
+                <img src="imagenes/incremental.png" alt="incremental">
+            </div>
+        </div>
+    
+        <!-- Botones de acción -->
+        <div class="acciones">
+            <button id="limpiar-incremental">Limpiar</button>
+            <button id="calcular-incremental">Calcular</button>
+        </div>
+    </section>
+    
+
+
+    
+            
+    
+
+    <!-- FOOTER -->
+
+    <script src="scripts/scripts2.js"></script>
+</body>
+</html>

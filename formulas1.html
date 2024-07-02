@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1er Parcial</title>
+    <link rel="stylesheet" href="styles/styles1.css">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    
+    <nav>
+        <ul>
+            <!-- Agrega hipervínculos internos aquí -->
+            <li><a href="#interes-simple">Interés Simple</a></li>
+            <li><a href="#interes-compuesto">Interés Compuesto</a></li>
+            <li><a href="#tasa-nominal">Tasa nominal</a></li>
+            <li><a href="#tasa-efectiva">Tasa efectiva</a></li>
+            <li><a href="#presupuesto-proyecto">Presupuesto del proyecto</a></li>
+            <li><a href="#F-financiamiento">Financiamiento</a></li>
+            <li><b><a href="index.html">Menu Principal</a></b></li>
+        </ul>
+    </nav>
+
+    <!-- ------------------ Interes simple ------------------------- -->
+
+    <section id="interes-simple">
+        <h2>Interés Simple</h2>
+
+        <div class="formula-container">
+            <div class="descripcion">
+                <!-- Descripciones y cajas de texto -->
+                <label for="tasa-interes">formula</label>
+                <div>
+                    <label for="interes">I =</label>
+                    <input type="text" id="interes" placeholder="interés">
+                </div>
+                <div>
+                    <label for="capital">C =</label>
+                    <input type="text" id="capital" placeholder="Capital o valor presente">
+                </div>
+                <div>
+                    <label for="i">i =</label>
+                    <input type="text" id="tasa-interes" placeholder="tasa de interés">
+                </div>               
+                <div>
+                    <label for="tiempo">t =</label>
+                    <input type="text" id="tiempo" placeholder="Tiempo o No. de periodos">
+                </div>
+            </div>
+
+            <div class="imagen">
+                <img src="imagenes/interes_simple.jpg" alt="Interes Simple">
+            </div>
+        </div>
+
+        <!-- Botones de acción -->
+        <div class="acciones">
+            <button id="limpiar">Limpiar</button>
+            <button id="calcular">Calcular</button>
+        </div>
+    </section>
+
+    <!-- ------------------ Interés Compuesto ------------------------- -->
+    <section id="interes-compuesto">
+        <h2>Interés Compuesto</h2>
+    
+        <div class="formula-container">
+            <div class="descripcion">
+                <label for="interes-compuesto">Formula</label>
+                <div>
+                    <label for="Cf">Cf =</label>
+                    <input type="text" id="capital-final" placeholder="Capital final" disabled>
+                </div>
+                <div>
+                    <label for="Ci">Ci =</label>
+                    <input type="text" id="capital-inicial" placeholder="Capital inicial">
+                </div>
+                <div>
+                    <label for="R">R =</label>
+                    <input type="text" id="tasa-interes" placeholder="Tasa de interés">
+                </div>
+                <div>
+                    <label for="n">n =</label>
+                    <input type="text" id="numero-periodo" placeholder="Número del periodo">
+                </div>
+            </div>
+    
+            <div class="imagen">
+                <img src="imagenes/interes-compuesto.png" alt="interes-compuesto">
+            </div>
+        </div>
+    
+        <!-- Botones de acción -->
+        <div class="acciones">
+            <button id="limpiar-compuesto">Limpiar</button>
+            <button id="calcular-compuesto">Calcular</button>
+        </div>
+    </section>
+    
+
+    <!-- ------------------ Tasa nominal ------------------------- -->
+
+    <section id="tasa-nominal">
+        <h2>Tasa nominal</h2>
+    
+        <div class="formula-container">
+            <div class="descripcion">
+                <!-- Descripciones y cajas de texto -->
+                <label for="tasa-nominal">Fórmula</label>
+                <div>
+                    <label for="capital-final">I =</label>
+                    <input type="text" id="capital-final-nominal" placeholder="Capital final" disabled>
+                </div>
+                <div>
+                    <label for="C">C =</label>
+                    <input type="text" id="capital-inicial-nominal" placeholder="Capital o Valor presente">
+                </div>
+                <div>
+                    <label for="r">r =</label>
+                    <input type="text" id="tasa-interes-nominal" placeholder="Tasa de interés nominal anual">
+                </div>
+                <div>
+                    <label for="n">n =</label>
+                    <input type="text" id="numero-capitalizaciones-nominal" placeholder="Número de periodos de capitalización por año">
+                </div>
+                <div>
+                    <label for="t">t =</label>
+                    <input type="text" id="tiempo-nominal" placeholder="Tiempo en años">
+                </div>
+            </div>
+    
+            <div class="imagen">
+                <img src="imagenes/tasa-nominal.png" alt="tasa-nominal">
+            </div>
+        </div>
+    
+        <!-- Botones de acción -->
+        <div class="acciones">
+            <button id="limpiar-nominal">Limpiar</button>
+            <button id="calcular-nominal">Calcular</button>
+        </div>
+    </section>
+    
+
+    <!-- ------------------ Tasa efectiva ------------------------- -->
+
+    <section id="tasa-efectiva">
+        <h2>Tasa efectiva</h2>
+    
+        <div class="formula-container">
+            <div class="descripcion">
+                <!-- Descripciones y cajas de texto -->
+                <label for="tasa-efectiva">Fórmula</label>
+                <div>
+                    <label for="t-efectiva">T.efectiva =</label>
+                    <input type="text" id="tasa-efectiva-resultado" placeholder="Tasa efectiva anual" disabled>
+                </div>
+                <div>
+                    <label for="r">r =</label>
+                    <input type="text" id="tasa-interes-anual-efectiva" placeholder="Tasa de interés nominal anual">
+                </div>
+                <div>
+                    <label for="n">n =</label>
+                    <input type="text" id="numero-periodo-efectiva" placeholder="Número de periodos de capitalización por año">
+                </div>
+            </div>
+    
+            <div class="imagen">
+                <img src="imagenes/t-efectiva.png" alt="tasa-efectiva">
+            </div>
+        </div>
+    
+        <!-- Botones de acción -->
+        <div class="acciones">
+            <button id="limpiar-efectiva">Limpiar</button>
+            <button id="calcular-efectiva">Calcular</button>
+        </div>
+    </section>
+    
+
+
+    <!-- ------------------ Presupuesto del proyecto ------------------------- -->
+
+    <section id="presupuesto-proyecto">
+        <h2>Presupuesto del proyecto</h2>
+    
+        <div class="formula-container">
+            <div class="descripcion">
+                <!-- Descripciones y cajas de texto -->
+                <label for="presupuesto-proyecto">Fórmula</label>
+                <div>
+                    <label for="P-p">P.P =</label>
+                    <input type="text" id="presupuestoPro" placeholder="Presupuesto del proyecto" disabled>
+                </div>
+                <div>
+                    <label for="Cte">CT Entradas =</label>
+                    <input type="text" id="entradas" placeholder="Costos de Entradas">
+                </div>
+                <div>
+                    <label for="Ctp">CT procesos =</label>
+                    <input type="text" id="procesos" placeholder="Costos de procesos">
+                </div>
+                <div>
+                    <label for="Cts">CT salidas =</label>
+                    <input type="text" id="salidas" placeholder="Costos de salidas">
+                </div>
+            </div>
+    
+            <div class="imagen">
+                <img src="imagenes/presupuesto-proyecto.png" alt="presupuesto proyecto">
+            </div>
+        </div>
+    
+        <!-- Botones de acción -->
+        <div class="acciones">
+            <button id="limpiar-presupuesto">Limpiar</button>
+            <button id="calcular-presupuesto">Calcular</button>
+        </div>
+    </section>
+    
+
+    <!-- ------------------ Financiamiento ------------------------- -->
+
+    <section id="F-financiamiento">
+        <h2>Financiamiento</h2>
+    
+        <div class="formula-container">
+            <div class="descripcion">
+                <!-- Descripciones y cajas de texto -->
+                <label for="Financiamiento">Fórmula</label>
+                <div>
+                    <label for="F">F =</label>
+                    <input type="text" id="financiamiento" placeholder="Financiamiento" disabled>
+                </div>
+                <div>
+                    <label for="p-negocio">P. Negocio =</label>
+                    <input type="text" id="presupuestoNegocio" placeholder="Presupuesto del negocio">
+                </div>
+                <div>
+                    <label for="p-proyecto">P. Proyecto =</label>
+                    <input type="text" id="presupuestoProyecto" placeholder="Presupuesto del proyecto">
+                </div>
+            </div>
+    
+            <div class="imagen">
+                <img src="imagenes/financiamiento.png" alt="Financiamiento">
+            </div>
+        </div>
+    
+        <!-- Botones de acción -->
+        <div class="acciones">
+            <button id="limpiar-financiamiento">Limpiar</button>
+            <button id="calcular-financiamiento">Calcular</button>
+        </div>
+    </section>
+    
+    
+
+
+    <!-- FOOTER -->
+
+    <script src="scripts/scripts1.js"></script>
+</body>
+</html>

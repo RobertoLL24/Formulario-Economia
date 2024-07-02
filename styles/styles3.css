@@ -1,0 +1,115 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Estilos del menú de navegación */
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #b42a12;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Estilos de la sección de fórmula */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.formula-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.descripcion {
+    flex: 1;
+}
+
+.descripcion label {
+    font-weight: bold;
+}
+
+.descripcion div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.descripcion input[type="text"] {
+    flex: 1;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.acciones {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 15px; /* Ajuste de padding para reducir el espacio */
+    margin-right: 10px; /* Espacio entre botones */
+    border: none; /* Quitamos el borde para todos los botones */
+    color: white; /* Color de texto para todos los botones */
+    cursor: pointer; /* Cursor apuntador para todos los botones */
+    border-radius: 5px; /* Borde redondeado para todos los botones */
+}
+
+#limpiar, #limpiar-monto-final, #limpiar-interes-ganado, #limpiar-monto-interes, #limpiar-ventas-plazos, #limpiar-plazos-intereses, #limpiar-plazos-insoluto, #limpiar-futuro {
+    background-color: #28a745;
+}
+
+#limpiar:hover {
+    background-color: #218838;
+}
+
+#calcular, #calcular-monto-final, #calcular-interes-ganado, #calcular-monto-interes, #calcular-ventas-plazos, #calcular-plazos-intereses, #calcular-plazos-insoluto, #calcular-futuro {
+    background-color: #007bff;
+}
+
+#calcular:hover {
+    background-color: #0056b3;
+}
